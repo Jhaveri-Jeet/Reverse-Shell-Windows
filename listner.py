@@ -34,7 +34,7 @@ def handle_client(client_socket):
 
 def main():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(("0.0.0.0", 9999))  # Listen on all available interfaces
+    server.bind(("0.0.0.0", 443))  # Listen on all available interfaces
     server.listen(5)
     print("Listening on port 9999")
     
